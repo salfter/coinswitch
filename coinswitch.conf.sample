@@ -1,0 +1,38 @@
+##############################################################################
+[Cryptsy]
+
+# Cryptsy API key
+key=CRYPTSY_KEY_GOES_HERE
+
+# Cryptsy API secret
+secret=CRYPTSY_SECRET_GOES_HERE
+
+# auto-withdraw BTC address (must be a preauthorized withdrawal address)
+addr=BTC_ADDR_GOES_HERE
+
+# minimum balance to auto-withdraw
+minbal=0.01 ; BTC
+
+##############################################################################
+[CoinWarz]
+
+# CoinWarz API key
+apikey=COINWARZ_API_KEY_GOES_HERE
+
+# The rest of these are parameters to the CoinWarz API's profitability call
+# and are passed to it as-is:
+# http://www.coinwarz.com/v1/api/documentation
+
+# algorithm to check
+algo=scrypt
+
+# scrypt mining parameters
+ScryptHashRate=6500   ; kH/s
+ScryptPower=200       ; W
+ScryptPowerCost=0.11  ; $/kWh
+
+##############################################################################
+[Misc]
+
+# frequency with which we should reevaluate profitability
+interval=3600  ; s

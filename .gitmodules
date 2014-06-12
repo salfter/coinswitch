@@ -1,0 +1,3 @@
+[submodule "PyCryptsy"]
+	path = PyCryptsy
+	url = https://github.com/salfter/PyCryptsy
