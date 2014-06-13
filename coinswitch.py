@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding=iso-8859-1
 
 # coinswitch: a mining profitability switcher
 #
@@ -135,9 +136,9 @@ while True:
   # print history table
   
   print ""
-  out="#"
+  out=""
   for i in range(0, len(history)):
-    out=out+"########"
+    out=out+"#########"
   print out
   out="#"
   for i in history:
@@ -151,9 +152,9 @@ while True:
   for i in history:
     out=out+" "+str(int(history[i]["profitability"]+0.5)).rjust(5)+" # "
   print out
-  out="#"
+  out=""
   for i in range(0, len(history)):
-    out=out+"########"
+    out=out+"#########"
   print out  
     
   round=round+1

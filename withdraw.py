@@ -42,5 +42,5 @@ while True:
   print "balance: "+str(balance)+" BTC"
   if (balance>0.01):
     print "withdrawal triggered"
-    pprint.pprint(api.Query("makewithdrawal", {"address": Config.get("Cryptsy", "addr"), "amount": Config.get("Cryptsy", "minbal")}))
+    pprint.pprint(api.Query("makewithdrawal", {"address": Config.get("Cryptsy", "addr"), "amount": balance}))
   time.sleep(float(Config.get("Misc", "interval")))
